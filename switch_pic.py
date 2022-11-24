@@ -134,7 +134,7 @@ def read_md(md_absolute_path, target):
             # 新图片地址
             new_pic_label = ""
             # 如果是网络图片
-            if "http" in pic_path:
+            if "http:" in pic_path or "https:" in pic_path:
                 if target == "d":
                     new_pic_label = net_disk(md_dirname, pic_path)
                 if target == "b":
